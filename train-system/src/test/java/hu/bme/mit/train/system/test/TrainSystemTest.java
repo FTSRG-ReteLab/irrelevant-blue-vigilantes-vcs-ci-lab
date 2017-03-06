@@ -14,6 +14,7 @@ public class TrainSystemTest {
 	TrainController controller;
 	TrainSensor sensor;
 	TrainUser user;
+	String pos;
 	
 	@Before
 	public void before() {
@@ -21,6 +22,7 @@ public class TrainSystemTest {
 		controller = system.getController();
 		sensor = system.getSensor();
 		user = system.getUser();
+		pos = system.getPos();
 
 		sensor.overrideSpeedLimit(50);
 	}
@@ -57,6 +59,12 @@ public class TrainSystemTest {
 		user.overrideJoystickPosition(-5);
 		controller.followSpeed();
 		Assert.assertEquals(-2, controller.getReferenceSpeed());
+	}
+	@Test
+	public void test4() {
+		Assert.assertEquals(
+				Integer.toString(controller.getReferenceSpeed()), pos);
+
 	}
 
 }

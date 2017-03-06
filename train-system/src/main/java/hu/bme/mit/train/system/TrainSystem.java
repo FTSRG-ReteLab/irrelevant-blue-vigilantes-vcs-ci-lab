@@ -39,4 +39,9 @@ public class TrainSystem {
 		return user;
 	}
 
+	public String getPos(){
+	    return tachographTable.get("JoystickPosition","102");
+    }
+
+
 }
