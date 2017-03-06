@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/FTSRG-ReteLab/irrelevant-blue-vigilantes-vcs-ci-lab.svg?branch=master)](https://travis-ci.org/FTSRG-ReteLab/irrelevant-blue-vigilantes-vcs-ci-lab)
+
 # vcs-ci-lab
 Sample application for the version control systems and continuous integration laboratory
 
